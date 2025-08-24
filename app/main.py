@@ -12,9 +12,7 @@ task.Base.metadata.create_all(bind=engine)
 # Создание приложения FastAPI
 app = FastAPI(
     title="Менеджер задач",
-    description=(
-        "API для управления задачами с CRUD операциями"
-    ),
+    description="API для управления задачами с CRUD операциями",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc"

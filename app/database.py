@@ -13,7 +13,11 @@ engine = create_engine(
 )
 
 # Создание фабрики сессий
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+SessionLocal = sessionmaker(
+    autocommit=False,
+    autoflush=False,
+    bind=engine
+)
 
 # Базовый класс для моделей
 Base = declarative_base()
